@@ -1,4 +1,3 @@
-import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/Header";
@@ -13,8 +12,7 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
-          <Toaster />
-          
+
           {/* Plexus Background */}
           <PlexusBackground />
           
@@ -25,6 +23,7 @@ function App() {
             <Projects />
             <Footer />
           </div>
+
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
