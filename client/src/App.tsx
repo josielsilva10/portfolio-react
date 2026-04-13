@@ -1,4 +1,3 @@
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -11,20 +10,18 @@ function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
-        <TooltipProvider>
 
-          {/* Plexus Background */}
-          <PlexusBackground />
-          
-          {/* Main Content */}
-          <div className="relative z-10">
-            <Header />
-            <About />
-            <Projects />
-            <Footer />
-          </div>
+        {/* Background */}
+        <PlexusBackground />
 
-        </TooltipProvider>
+        {/* Conteúdo principal */}
+        <div className="relative z-10">
+          <Header />
+          <About />
+          <Projects />
+          <Footer />
+        </div>
+
       </ThemeProvider>
     </ErrorBoundary>
   );
